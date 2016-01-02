@@ -206,9 +206,9 @@ function cptui_listings() {
 									$object_types[ $settings_key ] = $settings_value;
 
 									# In case they are not associated from the post type settings
-									if ( empty( $object_types['types'] ) ) {
+									if ( empty( $object_types['object_types'] ) ) {
 										$types = get_taxonomy( $taxonomy );
-										$object_types['types'] = $types->object_type;
+										$object_types['object_types'] = $types->object_type;
 									}
 								}
 							}
@@ -232,8 +232,8 @@ function cptui_listings() {
 								</td>
 								<td>
 									<?php
-									if ( !empty( $object_types['types'] ) ) {
-										foreach ( $object_types['types'] as $type ) {
+									if ( !empty( $object_types['object_types'] ) ) {
+										foreach ( $object_types['object_types'] as $type ) {
 											echo $type . '<br/>';
 										}
 									} ?>
