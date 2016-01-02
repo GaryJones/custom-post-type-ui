@@ -206,7 +206,7 @@ function cptui_listings() {
 									$object_types[ $settings_key ] = $settings_value;
 
 									# In case they are not associated from the post type settings
-									if ( empty( $object_types['taxonomies'] ) ) {
+									if ( empty( $object_types['types'] ) ) {
 										$types = get_taxonomy( $taxonomy );
 										$object_types['types'] = $types->object_type;
 									}
