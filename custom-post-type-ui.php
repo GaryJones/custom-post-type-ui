@@ -16,7 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CPT_VERSION', '1.2.3' );
+define( 'CPT_VERSION', '1.2.4' ); // Left for legacy purposes.
+define( 'CPTUI_VERSION', '1.2.4' );
 define( 'CPTUI_WP_VERSION', get_bloginfo( 'version' ) );
 
 /**
